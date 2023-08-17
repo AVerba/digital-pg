@@ -3,18 +3,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 143px;
   }
 
   &__item:not(:last-child) {
-    margin-right: 38px;
+    margin-right: 60px;
   }
 
   &__link {
-    color: #FFF;
-    font-family: Nexa Bold, sans-serif;
-    font-size: 16px;
+    color: var(--menu-text-color, #333);
+    font-family: TT Hoves, sans-serif;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-weight: 400;
+    line-height: calc(12 / 12); /* 100% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
   }
 }
