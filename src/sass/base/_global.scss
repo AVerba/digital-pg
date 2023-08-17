@@ -1,0 +1,16 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.overflow-y {
+  overflow: hidden;
+}
