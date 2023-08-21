@@ -1,0 +1,16 @@
+.projects {
+  &__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  &__list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    margin-bottom: 30px;
+  }
+}
