@@ -1,24 +1,33 @@
 .about {
   &__container {
+    //position: relative;
     background: #FBFBFB;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    //padding-top: 30px;
+    //padding-bottom: 30px;
+    padding: 30px 90px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 58% 40%;
+    grid-column-gap: 30px;
     //align-items: center;
     //justify-content: space-between;
   }
 
   &__images {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-left: auto;
   }
 
   &__describ {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding-left: 65px;
-    padding-right: 100px;
+    //padding-left: 65px;
+    //padding-right: 100px;
   }
 
   &__title {
@@ -59,5 +68,22 @@
   &__btn:hover {
     background-color: #ccc;
   }
+}
 
+._extra {
+  position: absolute;
+}
+
+._extra:first-child {
+  top: 0;
+  left: 0;
+}
+
+._extra:nth-child(2) {
+  bottom: -60px;
+  left: 0;
+}
+._extra:nth-child(3) {
+  bottom: 0;
+  right: 0;
 }
