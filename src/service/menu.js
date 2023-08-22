@@ -6,8 +6,14 @@ document.querySelectorAll('.menu__link').forEach(link => {
       item.classList.remove('active');
     });
     link.parentElement.classList.add('active');
-    document.querySelector(targetSection).scrollIntoView({
-      behavior: 'smooth'
+
+    const targetElement = document.querySelector(targetSection);
+    const yOffset = -104;
+    const yPosition = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    window.scrollTo({
+      top: yPosition,
+      behavior: 'smooth',
     });
   });
 });

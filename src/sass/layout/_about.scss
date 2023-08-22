@@ -1,4 +1,6 @@
 .about {
+  margin-top: 120px;
+
   &__container {
     //position: relative;
     background: #FBFBFB;
@@ -83,6 +85,7 @@
   bottom: -60px;
   left: 0;
 }
+
 ._extra:nth-child(3) {
   bottom: 0;
   right: 0;
