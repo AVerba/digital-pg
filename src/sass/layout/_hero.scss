@@ -1,11 +1,15 @@
 .hero {
   &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
   }
   &__describ{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items:start;
     justify-content: center;
+    margin: auto 0;
   }
 
   &__title {
@@ -81,6 +85,14 @@
       height: 1px;
       background: #E0E0E0;
     }
-
   }
+  &__gallery{
+    width: 770px;
+    overflow: hidden;
+  }
+}
+
+.btn-prev:disabled,.btn-next:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }

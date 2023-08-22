@@ -3,26 +3,33 @@
     <div class='hero__describ'>
       <h1 class='hero__title'>PROJECT<span>HOME</span></h1>
       <div class='hero__controls'>
-        <button type='button' class='hero__control-btn'>
+        <button type='button' class='hero__control-btn btn-prev'>
           <svg class='icon hero__icon' width="19" height="9">
             <use xlink:href='./images/sprite.svg#icon-arrow-left'></use>
           </svg>
         </button>
-        <button type='button' class='hero__control-btn'>
+        <button type='button' class='hero__control-btn btn-next'>
           <svg class='icon hero__icon' width="19" height="9">
             <use xlink:href='./images/sprite.svg#icon-arrow-right'></use>
           </svg>
         </button>
       </div>
       <div class='hero__pagination'>
-        <span>01</span>
-        <span>02</span>
+        <span id="activeSlideNumber"></span>
+        <span id="totalSlides"></span>
       </div>
 
     </div>
     <div class='hero__swiper'>
       <div class='hero__gallery'>
-        <div class='swiper-wrapper'></div>
+        <div class='swiper-wrapper'>
+          <div class='materials__slide swiper-slide'>
+            <img src="./images/hero/firstproject.jpg" alt="materials" />
+          </div>
+          <div class='materials__slide swiper-slide'>
+            <img src="./images/hero/firstproject.jpg" alt="materials" />
+          </div>
+        </div>
       </div>
 
     </div>
