@@ -1,11 +1,15 @@
 <section class='contacts' id='contacts'>
   <div class='container contacts__container'>
     <h2 class='contacts__title'>Connect with us</h2>
-    <button class='contacts__btn' type='button'>send
-      <svg class='icon contacts__icon' width='24' height='24'>
-        <use xlink:href='./images/sprite.svg#icon-arrow-right'></use>
-      </svg>
-    </button>
-
+    <form class='contacts__form form'>
+      <include src='./partials/components/feedbackForm.html'></include>
+      <p class='contacts__form-policy'>By submitting an application, you agree to the policy
+        confidentiality</p>
+      <button class='contacts__btn' type='submit'>send
+        <svg class='icon contacts__icon' width='24' height='24'>
+          <use xlink:href='./images/sprite.svg#icon-arrow-right'></use>
+        </svg>
+      </button>
+    </form>
   </div>
 </section>
