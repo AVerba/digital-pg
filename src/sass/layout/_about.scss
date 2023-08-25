@@ -1,18 +1,14 @@
+
+
 .about {
   margin-top: 120px;
 
   &__container {
-    //position: relative;
     background: #FBFBFB;
-    //padding-top: 30px;
-    //padding-bottom: 30px;
     padding: 30px 90px;
     display: grid;
-    //grid-template-columns: repeat(3, 1fr);
     grid-template-columns: 58% 40%;
     grid-column-gap: 30px;
-    //align-items: center;
-    //justify-content: space-between;
   }
 
   &__images {
@@ -28,65 +24,39 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    //padding-left: 65px;
-    //padding-right: 100px;
   }
 
   &__title {
-    color: #BDBDBD;
-    font-family: TT Hoves, sans-serif;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: calc(64 / 64); /* 100% */
+    @include text-style(64px, 64px, #BDBDBD);
     text-transform: capitalize;
   }
 
   &__content {
     margin-top: 20px;
-    color: #000;
-    font-family: TT Hoves, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: calc(25 / 16); /* 156.25% */
+    @include text-style(16px, 25px, #000);
   }
 
   &__btn {
     margin-top: 20px;
-    padding: 30px 65px;
-    color: #333;
-    font-family: TT Hoves, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: calc(12 / 12); /* 100% */
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    background-color: #FFF;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-
-  &__btn:hover {
-    background-color: #ccc;
+    @include button-style;
   }
 }
 
 ._extra {
   position: absolute;
-}
 
-._extra:first-child {
-  top: 0;
-  left: 0;
-}
+  &:first-child {
+    top: 0;
+    left: 0;
+  }
 
-._extra:nth-child(2) {
-  bottom: -60px;
-  left: 0;
-}
+  &:nth-child(2) {
+    bottom: -60px;
+    left: 0;
+  }
 
-._extra:nth-child(3) {
-  bottom: 0;
-  right: 0;
+  &:nth-child(3) {
+    bottom: 0;
+    right: 0;
+  }
 }
