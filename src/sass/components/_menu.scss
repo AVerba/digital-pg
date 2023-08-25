@@ -38,8 +38,7 @@
 
     &:hover::before,
     &:hover::after,
-    &:active::before,
-    &:active::after {
+    {
       transform: scaleX(1);
     }
   }
@@ -59,4 +58,9 @@
 
 .menu__item:target {
   background-color: lightblue; /* Измените стили на ваше усмотрение */
+}
+
+.active::before,
+.active::after {
+  transform: scaleX(1);
 }
