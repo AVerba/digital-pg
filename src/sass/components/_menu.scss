@@ -1,10 +1,8 @@
 .menu {
-
   &__list {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 143px;
   }
 
   &__item {
@@ -57,7 +55,7 @@
 }
 
 .menu__item:target {
-  background-color: lightblue; /* Измените стили на ваше усмотрение */
+  background-color: lightblue;
 }
 
 .active::before,
