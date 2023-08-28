@@ -4,7 +4,10 @@ const projectItems = document.querySelectorAll('.animate-projects-list .projects
   animateAboutImages = document.querySelector('.animate-about-images'),
   animateAboutDescrib = document.querySelector('.animate-about-describ'),
   animatContactsImage = document.querySelector('.animate-contacts-image'),
-  animateContactsForm = document.querySelector('.animate-contacts-form');
+  animateContactsForm = document.querySelector('.animate-contacts-form'),
+  animateTasksTitle = document.querySelector('.animate-tasks-titl'),
+  animateTasksItemLeft = document.querySelector('.animate-tasks-item-left'),
+  animateTasksItemRight = document.querySelector('.animate-tasks-item-right');
 
 //========Animation of the hero section==========
 gsap.from(animateHeroSwipe, {
@@ -93,6 +96,43 @@ gsap.from(animateContactsForm, {
     trigger: animateContactsForm,
     start: 'top 110%',
     end: 'bottom 70%',
+    toggleActions: 'play none none reverse',
+  },
+});
+
+// ==========Animation tasks
+
+gsap.from(animateTasksTitle, {
+  y: '100%',
+  duration: 1,
+  scrollTrigger: {
+    trigger: '.animate-tasks-title',
+    start: 'top 110%',
+    end: 'bottom 70%',
+    toggleActions: 'play none none reverse',
+  },
+});
+
+gsap.from(animateTasksItemLeft, {
+  x: '-100%',
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: '.animate-tasks-item-left',
+    start: 'top 80%',
+    end: 'bottom 50%',
+    toggleActions: 'play none none reverse',
+  },
+});
+
+gsap.from(animateTasksItemRight, {
+  x: '100%',
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: '.animate-tasks-item-right',
+    start: 'top 80%',
+    end: 'bottom 50%',
     toggleActions: 'play none none reverse',
   },
 });
