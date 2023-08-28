@@ -60,7 +60,7 @@ gsap.from(animateAboutImages, {
   duration: 1,
   scrollTrigger: {
     trigger: animateAboutImages,
-    start: 'top 80%',
+    start: 'top 100%',
     end: 'bottom 50%',
     toggleActions: 'play none none reverse',
   },
