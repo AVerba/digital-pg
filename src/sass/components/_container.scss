@@ -1,6 +1,13 @@
 .container {
-   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 135px;
+  padding: 0 15px;
+  @include for-size(tablet) {
+    max-width: var(--tablet);
+    padding: 0 15px;
+  }
 
+  @include for-size(desktop) {
+   max-width: var(--desktop);
+    padding: 0 15px;
+  }
 }

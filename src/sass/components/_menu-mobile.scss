@@ -19,7 +19,7 @@
 
   &__close-btn {
     position: absolute;
-    top: 27px;
+    top: 31px;
     right: 18px;
     width: 27px;
     height: 27px;
@@ -47,21 +47,23 @@
     padding: 10px 21.5px;
 
 
+
+
     &:not(:last-child) {
-      margin-bottom: 25px;
+      //margin-bottom: 25px;
     }
 
-    &:hover,
-    &:active {
-      border-radius: 4px;
-      background: #FFF;
-      padding: 10px 21.5px;
-      color: #606B74;
-
-      .menu__link {
-        color: #606B74;
-      }
-    }
+    //&:hover,
+    //&:active {
+    //  border-radius: 4px;
+    //  background-color: #949191;
+    //  padding: 10px 21.5px;
+    //  color: #606B74;
+    //
+    //  .menu__link {
+    //    color: #606B74;
+    //  }
+    //}
   }
 
   &__link {
@@ -77,11 +79,6 @@
 
 }
 
-
-//.is-hidden {
-//  opacity: 0;
-//  pointer-events: none;
-//}
 .js-open-menu {
   .icon {
     fill: #333333;

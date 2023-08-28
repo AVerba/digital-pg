@@ -1,14 +1,19 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
   width: 100%;
   padding-top: 29px;
   padding-bottom: 31px;
   transition: background-color 0.3s ease;
 
+  @include for-size(tablet) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+
+
   &__container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,9 +21,13 @@
 
   &__menu {
     display: none;
-    @include for-size(tablet) {
+    @include for-size(tablet){
       display: block;
       margin-left: auto;
+      margin-right: 0;
+    }
+    @include for-size(desktop) {
+      display: block;
       margin-right: 132px;
     }
   }
