@@ -1,6 +1,9 @@
 .tasks {
-  margin-top: 150px;
   width: 100%;
+  margin-top: 70px;
+  @include for-size(tablet){
+    margin-top: 150px;
+  }
 
   &__container {
     width: 100%;
@@ -13,19 +16,25 @@
   &__title {
     color: #BDBDBD;
     font-family: TT Hoves, sans-serif;
-    font-size: 64px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 300;
-    line-height: calc(64 / 64); /* 100% */
-
+    line-height: calc(64 / 40); /* 100% */
     text-transform: uppercase;
+    @include for-size(tablet){
+      font-size: 64px;
+      font-style: normal;
+      line-height: calc(64 / 64); /* 100% */
+    }
   }
 
   &__list {
-    margin-top: 62px;
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    @include for-size(tablet){
+      margin-top: 62px;
+      flex-direction: row;
+    }
   }
 
   &__item {
@@ -38,19 +47,33 @@
   &__position {
     color: #F2F2F2;
     font-family: SF Pro Display, sans-serif;
-    font-size: 200px;
+    font-size: 154px;
     font-style: normal;
     font-weight: 900;
-    line-height: calc(200 / 200);
+    line-height: calc(200 /154);
+    @include for-size(tablet){
+      font-size: 200px;
+      line-height: calc(200 / 200)
+    }
   }
 
   &__description {
-    margin-left: 30px;
+    margin-left: 12px;
     color: #333;
     font-family: TT Hoves, sans-serif;
-    font-size: 22px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: calc(36 / 22); /* 163.636% */
+    line-height: calc(36 / 15); /* 163.636% */
+    @include for-size(tablet){
+      margin-left: 10px;
+      font-size: 17px;
+      line-height: calc(36 / 22);
+    }
+    @include for-size(desktop){
+      margin-left: 30px;
+      font-size: 22px;
+      line-height: calc(36 / 22);
+    }
   }
 }

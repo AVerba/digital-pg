@@ -17,12 +17,16 @@
   &__title {
     color: #BDBDBD;
     font-family: TT Hoves, sans-serif;
-    font-size: 64px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 300;
-    line-height: calc(64 / 64); /* 100% */
-
+    line-height: calc(64 / 40); /* 100% */
     text-transform: uppercase;
+    @include for-size(tablet) {
+      font-size: 64px;
+      font-style: normal;
+      line-height: calc(64 / 64); /* 100% */
+    }
   }
 
   &__form {
@@ -64,5 +68,12 @@
 
   &__icon {
     margin-left: 10px;
+  }
+
+  &__img {
+    display: none;
+    @include for-size(tablet) {
+      display: block;
+    }
   }
 }
