@@ -12,7 +12,6 @@
       grid-template-columns: 58% 40%;
       grid-column-gap: 30px;
     }
-
   }
 
   &__images {
@@ -24,9 +23,7 @@
       align-items: end;
       justify-content: end;
       margin-left: auto;
-
     }
-
   }
 
   &__describ {
@@ -46,12 +43,12 @@
     @include for-size(tablet) {
       font-size: 64px;
       line-height: calc(64 / 64);
-
     }
   }
 
   &__content {
     margin-top: 20px;
+    margin-right: 7px;
     color: #000;
     font-family: TT Hoves, sans-serif;
     font-size: 16px;

@@ -94,7 +94,7 @@ gsap.from(animateContactsForm, {
   duration: 1,
   scrollTrigger: {
     trigger: animateContactsForm,
-    start: 'top 110%',
+    start: 'top 100%',
     end: 'bottom 70%',
     toggleActions: 'play none none reverse',
   },

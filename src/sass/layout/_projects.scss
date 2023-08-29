@@ -1,5 +1,8 @@
 .projects {
-  margin-top: 120px;
+  margin-top: 81px;
+  @include for-size(tablet) {
+    margin-top: 120px;
+  }
 
   &__container {
     display: flex;
@@ -15,7 +18,7 @@
     font-weight: 300;
     line-height: calc(64 / 40); /* 100% */
     text-transform: uppercase;
-    @include for-size(tablet){
+    @include for-size(tablet) {
       font-size: 64px;
       font-style: normal;
       line-height: calc(64 / 64); /* 100% */
@@ -25,17 +28,32 @@
   &__list {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+
     margin-top: 60px;
     margin-bottom: -30px;
+    @include for-size(desktop) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   &__item {
     margin-bottom: 30px;
-    position: relative;
-    cursor: pointer;
+    @include for-size(to-desktop) {
+      width: 100%;
+      position: relative;
+      cursor: pointer;
+    }
+  }
 
+  &__img {
+    @include for-size(to-desktop) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__item-backdrop {
@@ -61,7 +79,6 @@
       line-height: calc(64 / 64); /* 100% */
       text-transform: uppercase;
       text-align: center;
-
     }
 
     button {
@@ -75,7 +92,8 @@
       letter-spacing: 2.4px;
       background-color: inherit;
       text-transform: uppercase;
-      .icon{
+
+      .icon {
         fill: #FFFFFF;
       }
     }
